@@ -3,62 +3,65 @@
 <head>
 <meta charset="UTF-8">
 <title>Hacked By Yusuf Arie Faldi</title>
-
 <style>
     body {
-        margin: 0;
-        padding: 0;
-        background: #000; /* hitam */
-        font-family: "Courier New", monospace;
-        color: #ff0000; /* merah */
+        background: black;
+        color: red;
+        font-family: 'Courier New', monospace;
         text-align: center;
+        margin-top: 5%;
+        animation: fadeIn 2s ease-in-out;
     }
 
     h1 {
-        font-size: 45px;
-        margin-top: 80px;
-        text-shadow: 0 0 15px #ff0000;
-        animation: glow 1.5s infinite alternate;
+        font-size: 60px;
+        text-shadow: 0 0 20px red;
     }
 
-    @keyframes glow {
-        from { text-shadow: 0 0 5px #ff0000; }
-        to { text-shadow: 0 0 20px #ff0000; }
-    }
-
-    .glitch {
-        font-size: 32px;
-        margin-top: 25px;
-        animation: glitch 1s infinite;
+    h2 {
+        font-size: 30px;
+        margin-top: 20px;
         text-shadow: 0 0 10px red;
+    }
+
+    img {
+        width: 260px;
+        margin-top: 40px;
+        filter: drop-shadow(0 0 20px red);
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    /* Efek glitch */
+    .glitch {
+        position: relative;
+        color: red;
+        font-size: 60px;
+        animation: glitch 0.8s infinite;
     }
 
     @keyframes glitch {
         0% { text-shadow: 2px 2px red; }
-        20% { text-shadow: -2px -2px red; }
-        40% { text-shadow: 2px -2px red; }
+        20% { text-shadow: -2px -2px white; }
+        40% { text-shadow: 2px -2px white; }
         60% { text-shadow: -2px 2px red; }
-        80% { text-shadow: 3px 3px red; }
-        100% { text-shadow: -3px -3px red; }
-    }
-
-    .anon-img {
-        width: 260px;
-        margin-top: 30px;
-        filter: drop-shadow(0 0 15px red);
+        80% { text-shadow: 2px 2px white; }
+        100% { text-shadow: -2px -2px red; }
     }
 </style>
 </head>
 
 <body>
 
-<h1>HACKED BY YUSUF ARIE FALDI</h1>
+<h1 class="glitch">HACKED BY YUSUF ARIE FALDI</h1>
 
-<!-- Gambar Anonymous -->
-<img class="anon-img" 
-src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Anonymous_emblem.svg/768px-Anonymous_emblem.svg.png">
+<!-- Gambar Anonymous baru (dijamin tampil) -->
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Anonymous_emblem.svg/512px-Anonymous_emblem.svg.png">
 
-<div class="glitch">WEBSITE HACKED</div>
+<h2>WEBSITE HACKED</h2>
 
 </body>
 </html>
