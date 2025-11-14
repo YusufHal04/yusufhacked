@@ -8,58 +8,56 @@
     body {
         margin: 0;
         padding: 0;
-        background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=80');
-        background-size: cover;
-        background-position: center;
+        background: #000; /* hitam */
         font-family: "Courier New", monospace;
-        color: #0f0;
+        color: #ff0000; /* merah */
         text-align: center;
-        overflow: hidden;
-    }
-
-    .overlay {
-        background: rgba(0,0,0,0.6);
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
     }
 
     h1 {
-        font-size: 50px;
-        margin-top: 150px;
-        text-shadow: 0 0 10px #0f0;
+        font-size: 45px;
+        margin-top: 80px;
+        text-shadow: 0 0 15px #ff0000;
         animation: glow 1.5s infinite alternate;
     }
 
     @keyframes glow {
-        from { text-shadow: 0 0 5px #0f0; }
-        to { text-shadow: 0 0 20px #0f0; }
+        from { text-shadow: 0 0 5px #ff0000; }
+        to { text-shadow: 0 0 20px #ff0000; }
     }
 
     .glitch {
         font-size: 32px;
-        margin-top: 20px;
-        position: relative;
+        margin-top: 25px;
         animation: glitch 1s infinite;
+        text-shadow: 0 0 10px red;
     }
 
     @keyframes glitch {
         0% { text-shadow: 2px 2px red; }
-        20% { text-shadow: -2px -2px lime; }
-        40% { text-shadow: 2px -2px blue; }
-        60% { text-shadow: -2px 2px yellow; }
-        80% { text-shadow: 2px 2px orange; }
-        100% { text-shadow: -2px -2px cyan; }
+        20% { text-shadow: -2px -2px red; }
+        40% { text-shadow: 2px -2px red; }
+        60% { text-shadow: -2px 2px red; }
+        80% { text-shadow: 3px 3px red; }
+        100% { text-shadow: -3px -3px red; }
+    }
+
+    .anon-img {
+        width: 260px;
+        margin-top: 30px;
+        filter: drop-shadow(0 0 15px red);
     }
 </style>
 </head>
 
 <body>
-<div class="overlay"></div>
 
 <h1>HACKED BY YUSUF ARIE FALDI</h1>
+
+<!-- Gambar Anonymous -->
+<img class="anon-img" 
+src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Anonymous_emblem.svg/768px-Anonymous_emblem.svg.png">
+
 <div class="glitch">WEBSITE HACKED</div>
 
 </body>
