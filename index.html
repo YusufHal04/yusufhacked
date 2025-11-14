@@ -3,56 +3,64 @@
 <head>
 <meta charset="UTF-8">
 <title>Hacked By Yusuf Arie Faldi</title>
+
 <style>
     body {
         background: black;
-        color: red;
         font-family: 'Courier New', monospace;
         text-align: center;
-        margin-top: 5%;
-        animation: fadeIn 2s ease-in-out;
+        padding-top: 8%;
     }
 
-    h1 {
-        font-size: 60px;
-        text-shadow: 0 0 20px red;
-    }
-
-    /* Efek glitch untuk kedua teks */
-    .glitch {
-        position: relative;
+    /* Style merah + outline putih */
+    .outline-text {
         color: red;
-        animation: glitch 0.8s infinite;
+        font-weight: bold;
+        letter-spacing: 5px;
+
+        /* Outline */
+        text-shadow:
+            -2px -2px 0 white,
+             2px -2px 0 white,
+            -2px  2px 0 white,
+             2px  2px 0 white;
+    }
+
+    /* Efek glitch / ketap-ketip */
+    .glitch {
+        animation: glitch 1s infinite;
     }
 
     @keyframes glitch {
-        0% { text-shadow: 2px 2px red; }
-        20% { text-shadow: -2px -2px white; }
-        40% { text-shadow: 2px -2px white; }
-        60% { text-shadow: -2px 2px red; }
-        80% { text-shadow: 2px 2px white; }
-        100% { text-shadow: -2px -2px red; }
+        0%   { opacity: 1; }
+        50%  { opacity: 0.65; }
+        100% { opacity: 1; }
     }
 
-    /* WEBSITE HACKED dibuat lebih besar */
-    .big-glitch {
-        font-size: 80px;
-        text-shadow: 0 0 25px red;
-        margin-top: 20px;
+    /* Ukuran teks */
+    .title {
+        font-size: 60px;
     }
 
-    @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
+    .sub-title {
+        margin-top: 30px;
+        font-size: 90px; /* LEBIH BESAR seperti permintaan */
     }
 </style>
+
 </head>
 
 <body>
 
-<h1 class="glitch">HACKED BY YUSUF ARIE FALDI</h1>
+    <!-- TEKS UTAMA -->
+    <div class="outline-text glitch title">
+        HACKED BY YUSUF ARIE FALDI
+    </div>
 
-<h2 class="glitch big-glitch">WEBSITE HACKED!!!!!</h2>
+    <!-- TEKS WEBSITE HACKED DI BAWAHNYA -->
+    <div class="outline-text glitch sub-title">
+        WEBSITE HACKED!!!!!
+    </div>
 
 </body>
 </html>
