@@ -8,8 +8,15 @@
     body {
         background: black;
         font-family: 'Courier New', monospace;
-        text-align: center;
-        padding-top: 8%;
+
+        /* FULL CENTER */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        height: 100vh;
+        margin: 0;
     }
 
     /* Style merah + outline putih */
@@ -18,7 +25,6 @@
         font-weight: bold;
         letter-spacing: 5px;
 
-        /* Outline */
         text-shadow:
             -2px -2px 0 white,
              2px -2px 0 white,
@@ -26,25 +32,24 @@
              2px  2px 0 white;
     }
 
-    /* Efek glitch / ketap-ketip */
+    /* Efek kedap-kedip */
     .glitch {
         animation: glitch 1s infinite;
     }
 
     @keyframes glitch {
-        0%   { opacity: 1; }
-        50%  { opacity: 0.65; }
+        0% { opacity: 1; }
+        50% { opacity: 0.75; }
         100% { opacity: 1; }
     }
 
-    /* Ukuran teks */
     .title {
-        font-size: 60px;
+        font-size: 70px; /* lebih besar */
     }
 
     .sub-title {
-        margin-top: 30px;
-        font-size: 90px; /* LEBIH BESAR seperti permintaan */
+        font-size: 45px; /* lebih kecil dari title */
+        margin-top: 20px;
     }
 </style>
 
@@ -52,12 +57,10 @@
 
 <body>
 
-    <!-- TEKS UTAMA -->
     <div class="outline-text glitch title">
         HACKED BY YUSUF ARIE FALDI
     </div>
 
-    <!-- TEKS WEBSITE HACKED DI BAWAHNYA -->
     <div class="outline-text glitch sub-title">
         WEBSITE HACKED!!!!!
     </div>
